@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Isabella Stefano - Intro to AI</title>
+    Isabella Stefano - Intro to AI
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
