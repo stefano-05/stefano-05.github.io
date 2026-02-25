@@ -4,35 +4,6 @@
     <title>Isabella Stefano - Intro to AI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #222;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        section {
-            padding: 30px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
