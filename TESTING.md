@@ -1,5 +1,5 @@
 #Testing Checklist
-- [ ] Verified that the deployed website link loads successfully.
+- [.] Verified that the deployed website link loads successfully.
 - [ ] Confirmed the site is accessible at https://stefano-05.github.io.
 - [ ] Checked that there are no broken links.
 - [ ] Verified that the GitHub profile link works correctly.
