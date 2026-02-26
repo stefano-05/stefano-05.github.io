@@ -15,7 +15,7 @@
 
 **Layout Choices**
 
-I chose a single-page layout with vertical scrolling. Each section is clearly separated using headings. The navigation is simple and structured so that users can quickly identify the About and Projects sections. The layout is responsive so it works on both desktop and mobile devices.
+I chose a single-page layout with vertical scrolling. Each section is clearly separated using headings. The navigation is simple and structured so that users can quickly identify the about, projects, and documentation sections. The layout is responsive so it works on both desktop and mobile devices. 
 
 **Design Rationale**
 
