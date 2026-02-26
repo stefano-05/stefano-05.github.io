@@ -4,49 +4,122 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Isabella Stefano | Intro to AI</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    section {
+      background: white;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin: 30px 0;
+      color: #666;
+    }
+  </style>
 </head>
+
 <body>
-  <header class="card">
+
+  <!-- Header -->
+  <header>
     <h1>Isabella Stefano</h1>
-    <p>Intro to AI (AI 109)</p>
+    <p>Intro to AI</p>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>About</h2>
-      <p>
-        Write 3–6 sentences introducing yourself. Include interests, what you’re studying,
-        and what you hope to learn in this course.
-      </p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello, my name is Isabella Stefano. I am a sophomore at CUA majoring in
+      Criminology and minoring in Social Work. There are many different units
+      in my major, but after graduation I plan on earning my master's degree in
+      Forensic Science. I am taking this course as a requirement for my
+      Criminology major. This course will give future employers the opportunity
+      to see that I have experience with AI concepts. In addition to this
+      course, I am also taking SOC 256: The World of AI, which explores both
+      coding and the ethical questions surrounding artificial intelligence.
+    </p>
+  </section>
 
-    <section class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Project 1, Part 2:</strong> JavaScript Game (coming soon)</li>
-        <li>
-          <a href="https://github.com/stefano-05" target="_blank" rel="noopener">
-            My GitHub Profile
-          </a>
-        </li>
-      </ul>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <p><strong>Project 1, Part 2:</strong> JavaScript Game (Coming Soon)</p>
+
+    <p>
+      Visit my GitHub profile:
+      <a href="https://github.com/stefano-05" target="_blank">Isabella Stefano GitHub</a>
+    </p>
 
     <h3>Documentation</h3>
-<ul>
-  <li><a href="README.md">README</a></li>
-  <li><a href="DESIGN.md">Design Plan</a></li>
-  <li><a href="TESTING.md">Testing Checklist</a></li>
-</ul>
-  </main>
+    <ul>
+      <li><a href="README.md">README</a></li>
+      <li><a href="DESIGN.md">Design Plan</a></li>
+      <li><a href="TESTING.md">Testing Checklist</a></li>
+    </ul>
 
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> Your Name</p>
+    <p>© <span id="year"></span> Isabella Stefano</p>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
