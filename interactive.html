@@ -95,6 +95,13 @@ function resetBall() {
     dx = -dx;
 }
 
+// Reset game
+function resetGame() {
+    playerScore = 0;
+    aiScore = 0;
+    resetBall();
+}
+
 // Game loop
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -119,18 +126,18 @@ function draw() {
         dy = -dy;
     }
 
-    // Player paddle collision (speed up)
+    // Player paddle collision (NO speed up now)
     if (x - radius < 20 &&
         y > paddleY &&
         y < paddleY + paddleHeight) {
-        dx = -dx * 1.1;
+        dx = -dx;
     }
 
-    // AI paddle collision (speed up)
+    // AI paddle collision (NO speed up)
     if (x + radius > canvas.width - 20 &&
         y > aiY &&
         y < aiY + paddleHeight) {
-        dx = -dx * 1.1;
+        dx = -dx;
     }
 
     // Scoring
@@ -144,15 +151,22 @@ function draw() {
         resetBall();
     }
 
+    // WIN CONDITION
+    if (playerScore === 5) {
+        alert("You win! 🎉");
+        resetGame();
+    }
+
+    if (aiScore === 5) {
+        alert("AI wins!");
+        resetGame();
+    }
+
     requestAnimationFrame(draw);
 }
 
 // Start game
-draw(if (playerScore === 5) {
-    alert("You win!");
-    playerScore = 0;
-    aiScore = 0;
-});
+draw();
 
 </script>
 
