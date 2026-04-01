@@ -50,12 +50,12 @@ function talk() {
         music.play();
         output = "Playing Song of Storms 🎮";
     }
-    else if (input.includes("mozart")) {
+    else if (input.includes("classical")) {
         music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
         music.play();
         output = "Playing Mozart 🎼";
     }
-    else if (input.includes("sinatra") || input.includes("jazz")) {
+    else if (input.includes("jazz") || input.includes("jazz")) {
         music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3";
         music.play();
         output = "Playing Sinatra-style jazz 🎤";
@@ -65,7 +65,7 @@ function talk() {
         output = "Music stopped.";
     }
     else {
-        output = "Try typing: 'zelda', 'mozart', 'sinatra', or 'play music'";
+        output = "Try typing: 'zelda', 'classical', 'jazz', or 'play music'";
     }
 
     document.getElementById("response").innerText = output;
