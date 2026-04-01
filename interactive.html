@@ -38,9 +38,21 @@
 function talk() {
     let input = document.getElementById("userInput").value.toLowerCase();
     let output = "";
-    let music = document.getElementByID("musicPlayer");
+    let music = document.getElementById("musicPlayer");
 
-    if (input.includes("play music")) {
+    if (input.includes("hello")) {
+        output = "Hi there, I am Bella's Chatbot! (type 'questions' to see what I can do!)";
+    } 
+    else if (input.includes("questions")) {
+        output = "Ask me: 'what can you do?', 'play music', 'zelda', 'classical', or 'jazz'";
+    }
+    else if (input.includes("what can you do")) {
+        output = "I am a music chatbot! I can play different styles of music.";
+    }
+    else if (input.includes("music")) {
+        output = "Try asking me to play something!";
+    }
+    else if (input.includes("play music")) {
         music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
         music.play();
         output = "Playing music 🎵";
@@ -50,12 +62,12 @@ function talk() {
         music.play();
         output = "Playing Song of Storms 🎮";
     }
-    else if (input.includes("classical")) {
+    else if (input.includes("classical") || input.includes("mozart")) {
         music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
         music.play();
         output = "Playing Mozart 🎼";
     }
-    else if (input.includes("jazz") || input.includes("jazz")) {
+    else if (input.includes("jazz") || input.includes("sinatra")) {
         music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3";
         music.play();
         output = "Playing Sinatra-style jazz 🎤";
@@ -64,30 +76,6 @@ function talk() {
         music.pause();
         output = "Music stopped.";
     }
-    else {
-        output = "Try typing: 'zelda', 'classical', 'jazz', or 'play music'";
-    }
-
-    document.getElementById("response").innerText = output;
-}
-
-    
-    if (input.includes("hello")) {
-        output = "Hi there, I am Bella's Chatbot! (type ""questions"" and you can see what I can do!)";
-    } 
-
-    else if(input.includes("questions")){
-        output = "ask me - what can you do? - say something about music - or ask me to play some music!";
-    ]
-        
-    else if (input.includes("what can you do?")) {
-        output = "I am a music chatbot! Bella is developing me to play some music!";
-    }
-        
-    else if (input.includes("music")) {
-        output = "I love music too!";
-    }
-        
     else if (input.includes("bye")) {
         output = "Goodbye!";
     } 
@@ -95,8 +83,10 @@ function talk() {
         output = "I don't understand, try something else!";
     }
 
-    
     document.getElementById("response").innerText = output;
+
+    
+    document.getElementById("userInput").value = "";
 }
 
 </script>
