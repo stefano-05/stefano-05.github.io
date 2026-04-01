@@ -19,8 +19,7 @@
 <main>
 
 <section>
-    <h2>Use ↑ and ↓ keys to move</h2>
-
+    <h2>Use ↑ and ↓ keys to play</h2>
     <canvas id="gameCanvas" width="600" height="400" style="background:black;"></canvas>
 </section>
 
@@ -32,16 +31,23 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // Ball
-let x = 300;
-let y = 200;
+let x = canvas.width / 2;
+let y = canvas.height / 2;
 let dx = 3;
 let dy = 3;
 let radius = 10;
 
-// Paddle
+// Player paddle
 let paddleY = 150;
 const paddleHeight = 80;
 const paddleWidth = 10;
+
+// AI paddle
+let aiY = 150;
+
+// Score
+let playerScore = 0;
+let aiScore = 0;
 
 // Draw ball
 function drawBall() {
@@ -52,10 +58,24 @@ function drawBall() {
     ctx.closePath();
 }
 
-// Draw paddle
+// Draw player paddle
 function drawPaddle() {
     ctx.fillStyle = "white";
     ctx.fillRect(10, paddleY, paddleWidth, paddleHeight);
+}
+
+// Draw AI paddle
+function drawAIPaddle() {
+    ctx.fillStyle = "white";
+    ctx.fillRect(canvas.width - 20, aiY, paddleWidth, paddleHeight);
+}
+
+// Draw score
+function drawScore() {
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText("You: " + playerScore, 50, 20);
+    ctx.fillText("AI: " + aiScore, canvas.width - 120, 20);
 }
 
 // Controls
@@ -68,46 +88,68 @@ document.addEventListener("keydown", function(e) {
     }
 });
 
+// Reset ball
+function resetBall() {
+    x = canvas.width / 2;
+    y = canvas.height / 2;
+    dx = -dx;
+}
+
 // Game loop
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    // AI movement (follows ball)
+    if (aiY + paddleHeight / 2 < y) {
+        aiY += 2;
+    } else {
+        aiY -= 2;
+    }
+
     drawBall();
     drawPaddle();
+    drawAIPaddle();
+    drawScore();
 
     x += dx;
     y += dy;
 
-    // Bounce off top/bottom
+    // Bounce top/bottom
     if (y + dy > canvas.height - radius || y + dy < radius) {
         dy = -dy;
     }
 
-    // Bounce off right wall
-    if (x + dx > canvas.width - radius) {
-        dx = -dx;
-    }
-
-    // Paddle collision
+    // Player paddle collision (speed up)
     if (x - radius < 20 &&
         y > paddleY &&
         y < paddleY + paddleHeight) {
-        dx = -dx;
+        dx = -dx * 1.1;
     }
 
-    // Miss = reset
+    // AI paddle collision (speed up)
+    if (x + radius > canvas.width - 20 &&
+        y > aiY &&
+        y < aiY + paddleHeight) {
+        dx = -dx * 1.1;
+    }
+
+    // Scoring
     if (x < 0) {
-        x = 300;
-        y = 200;
+        aiScore++;
+        resetBall();
+    }
+
+    if (x > canvas.width) {
+        playerScore++;
+        resetBall();
     }
 
     requestAnimationFrame(draw);
 }
 
+// Start game
 draw();
 
-let score = 0;
-    
 </script>
 
 </body>
