@@ -22,6 +22,69 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Page background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe6f2;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff4da6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #ff80bf;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Content boxes */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button {
+    background-color: #ff4da6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60073;
+}
+
 main {
     max-width: 800px;
     margin: auto;
