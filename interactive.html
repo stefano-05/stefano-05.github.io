@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Interactive Page</title>
+    <title>Pong Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Interactive Chatbot</h1>
+    <h1>Atari Pong Game 🕹️</h1>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="interactive.html">Interactive Page</a>
+    <a href="interactive.html">Game</a>
 </nav>
 
 <main>
 
 <section>
-    <h2>Talk to the Bot</h2>
+    <h2>Use ↑ and ↓ keys to move</h2>
 
-    <input type="text" id="userInput" placeholder="Type something..." />
-    <button onclick="talk()">Send</button>
-
-    <p id="response"></p>
-
-    <audio id="musicPlayer"></audio>
-    https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-    
+    <canvas id="gameCanvas" width="600" height="400" style="background:black;"></canvas>
 </section>
 
 </main>
 
 <script>
 
-function talk() {
-    let input = document.getElementById("userInput").value.toLowerCase();
-    let output = "";
-    let music = document.getElementById("musicPlayer");
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
 
-    if (input.includes("hello")) {
-        output = "Hi there, I am Bella's Chatbot! (type 'questions' to see what I can do!)";
-    } 
-    else if (input.includes("questions")) {
-        output = "Ask me: 'what can you do?', 'play music', 'zelda', or 'classical'";
-    }
-    else if (input.includes("what can you do")) {
-        output = "I am a music chatbot! I can play different styles of music.";
-    }
-    else if (input.includes("music")) {
-        output = "Try asking me to play something!";
-    }
-    else if (input.includes("play music")) {
-        music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-        music.play();
-        output = "Playing music 🎵";
-    } 
-    else if (input.includes("zelda") || input.includes("song of storms")) {
-        music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3";
-        music.play();
-        output = "Playing Song of Storms 🎮";
-    }
-    else if (input.includes("classical") || input.includes("mozart")) {
-        music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
-        music.play();
-        output = "Playing Mozart 🎼";
-    }
+// Ball
+let x = 300;
+let y = 200;
+let dx = 3;
+let dy = 3;
+let radius = 10;
 
-    else if (input.includes("stop") || input.includes("pause")) {
-        music.pause();
-        output = "Music stopped.";
-    }
-    else if (input.includes("bye")) {
-        output = "Goodbye!";
-    } 
-    else {
-        output = "I don't understand, try something else!";
-    }
+// Paddle
+let paddleY = 150;
+const paddleHeight = 80;
+const paddleWidth = 10;
 
-    document.getElementById("response").innerText = output;
-
-    
-    document.getElementById("userInput").value = "";
+// Draw ball
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.closePath();
 }
+
+// Draw paddle
+function drawPaddle() {
+    ctx.fillStyle = "white";
+    ctx.fillRect(10, paddleY, paddleWidth, paddleHeight);
+}
+
+// Controls
+document.addEventListener("keydown", function(e) {
+    if (e.key === "ArrowUp") {
+        paddleY -= 20;
+    }
+    else if (e.key === "ArrowDown") {
+        paddleY += 20;
+    }
+});
+
+// Game loop
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    drawBall();
+    drawPaddle();
+
+    x += dx;
+    y += dy;
+
+    // Bounce off top/bottom
+    if (y + dy > canvas.height - radius || y + dy < radius) {
+        dy = -dy;
+    }
+
+    // Bounce off right wall
+    if (x + dx > canvas.width - radius) {
+        dx = -dx;
+    }
+
+    // Paddle collision
+    if (x - radius < 20 &&
+        y > paddleY &&
+        y < paddleY + paddleHeight) {
+        dx = -dx;
+    }
+
+    // Miss = reset
+    if (x < 0) {
+        x = 300;
+        y = 200;
+    }
+
+    requestAnimationFrame(draw);
+}
+
+draw();
 
 </script>
 
 </body>
 </html>
-
