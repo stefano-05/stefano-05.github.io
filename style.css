@@ -1,48 +1,33 @@
-section {
-  background:white;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-
-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2980b9;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-}
-
-/* 1. BODY (entire page background + font) */
+/* BODY — overall page */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #ffe6f2;
     margin: 0;
+    line-height: 1.8; /* better readability */
 }
 
-/* 2. HEADER (top title area) */
+/* HEADER */
 header {
     background-color: #ff4da6;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
-/* 3. NAV BAR (menu under header) */
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* NAVIGATION BAR */
 nav {
     background-color: #ff80bf;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    margin-bottom: 20px; /* space below nav */
 }
 
 nav a {
@@ -54,34 +39,85 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #ffe6f2;
 }
 
-/* 4. MAIN (centers your content) */
+/* MAIN CONTENT AREA */
 main {
-    max-width: 800px;
-    margin: auto;   /* ← THIS centers everything */
-    padding: 20px; /* ← THIS adds space inside */
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* 5. SECTION (your content boxes) */
+/* SECTIONS (content boxes) */
 section {
     background: white;
-    padding: 20px;        /* ← SPACE INSIDE the box */
-    margin-bottom: 20px;  /* ← SPACE BETWEEN boxes */
+    padding: 30px;        /* inside spacing */
+    margin-bottom: 30px;  /* space between sections */
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
-/* 6. BUTTONS */
+/* HEADINGS */
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 15px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* BUTTONS */
 button {
     background-color: #ff4da6;
     color: white;
     border: none;
-    padding: 10px 15px;   /* ← SPACE INSIDE button */
+    padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
+    margin: 10px 5px;
 }
 
 button:hover {
     background-color: #e60073;
+}
+
+/* CANVAS (game styling) */
+canvas {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+
+/* OPTIONAL: makes text easier to read in sections */
+section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
