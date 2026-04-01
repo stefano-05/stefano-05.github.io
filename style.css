@@ -17,3 +17,17 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+section:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+}
