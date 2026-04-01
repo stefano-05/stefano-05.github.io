@@ -44,7 +44,7 @@ function talk() {
         output = "Hi there, I am Bella's Chatbot! (type 'questions' to see what I can do!)";
     } 
     else if (input.includes("questions")) {
-        output = "Ask me: 'what can you do?', 'play music', 'zelda', 'classical', or 'jazz'";
+        output = "Ask me: 'what can you do?', 'play music', 'zelda', or 'classical'";
     }
     else if (input.includes("what can you do")) {
         output = "I am a music chatbot! I can play different styles of music.";
@@ -67,11 +67,7 @@ function talk() {
         music.play();
         output = "Playing Mozart 🎼";
     }
-    else if (input.includes("jazz") || input.includes("sinatra")) {
-        music.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3";
-        music.play();
-        output = "Playing Sinatra-style jazz 🎤";
-    }
+
     else if (input.includes("stop") || input.includes("pause")) {
         music.pause();
         output = "Music stopped.";
