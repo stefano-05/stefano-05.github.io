@@ -37,11 +37,17 @@ function talk() {
     let output = "";
 
     if (input.includes("hello")) {
-        output = "Hi there!";
+        output = "Hi there, I am Bella's Chatbot!";
     } 
+        
+    else if (input.includes("what can you do?")) {
+        output = "I am a music chatbot! Bella is developing me to play some music!";
+    }
+        
     else if (input.includes("music")) {
         output = "I love music too!";
-    } 
+    }
+        
     else if (input.includes("bye")) {
         output = "Goodbye!";
     } 
@@ -57,8 +63,3 @@ function talk() {
 </body>
 </html>
 
-
-
-else if (input.includes("favorite song")) {
-    output = "I like classical and jazz!";
-} 
