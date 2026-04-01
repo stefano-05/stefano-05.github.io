@@ -5,6 +5,7 @@ section {
   border-radius: 8px;
 }
 
+
 button {
   background-color: #3498db;
   color: white;
@@ -22,14 +23,14 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Page background */
+/* 1. BODY (entire page background + font) */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #ffe6f2;
     margin: 0;
 }
 
-/* Header */
+/* 2. HEADER (top title area) */
 header {
     background-color: #ff4da6;
     color: white;
@@ -37,7 +38,7 @@ header {
     padding: 20px;
 }
 
-/* Navigation bar */
+/* 3. NAV BAR (menu under header) */
 nav {
     background-color: #ff80bf;
     text-align: center;
@@ -55,42 +56,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content */
+/* 4. MAIN (centers your content) */
 main {
     max-width: 800px;
-    margin: auto;
-    padding: 20px;
+    margin: auto;   /* ← THIS centers everything */
+    padding: 20px; /* ← THIS adds space inside */
 }
 
-/* Content boxes */
+/* 5. SECTION (your content boxes) */
 section {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20px;        /* ← SPACE INSIDE the box */
+    margin-bottom: 20px;  /* ← SPACE BETWEEN boxes */
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Buttons */
+/* 6. BUTTONS */
 button {
     background-color: #ff4da6;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 15px;   /* ← SPACE INSIDE button */
     border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #e60073;
-}
-
-main {
-    max-width: 800px;
-    margin: auto;
-}
-
-section:hover {
-    transform: scale(1.01);
-    transition: 0.2s;
 }
