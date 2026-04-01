@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+    <h1>Interactive Chatbot</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="interactive.html">Interactive Page</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Talk to the Bot</h2>
+
+    <input type="text" id="userInput" placeholder="Type something..." />
+    <button onclick="talk()">Send</button>
+
+    <p id="response"></p>
+
+</section>
+
+</main>
+
+<script>
+
+function talk() {
+    let input = document.getElementById("userInput").value.toLowerCase();
+    let output = "";
+
+    if (input.includes("hello")) {
+        output = "Hi there!";
+    } 
+    else if (input.includes("music")) {
+        output = "I love music too!";
+    } 
+    else if (input.includes("bye")) {
+        output = "Goodbye!";
+    } 
+    else {
+        output = "I don't understand, try something else!";
+    }
+
+    document.getElementById("response").innerText = output;
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+else if (input.includes("favorite song")) {
+    output = "I like classical and jazz!";
+} 
