@@ -1,23 +1,64 @@
-#AI and Criminology
+# AI and its Effect on the Criminal Justice System
 
-##
+Isabella Stefano  
+AI 109: Enter the World of Artificial Intelligence  
+April 30, 2026  
 
-AI and its effect on the Criminal Justice System
+---
 
+## Career Overview
 
+The creation of AI will impact everything and everyone in some shape or form, the good, better, and the bad. “AI-Enabled Future Crime,” by authors Caldwell, Andrews, Tanay, and Griffin, is a review of LLMs and their use in law, as well as a study of AI- and cybercrimes committed by perpetrators. Additionally, the “Possibility of Using Publicly Available Neural Networks in Criminal Proceedings” by Spirdinov argues more negatively on AI and its failure to comprehend human motives and emotions, and the skyrocketing rates of many different types of cyber crimes. The introduction of AI into the Criminology and Forensic Science profession will enhance analytical capabilities. However, it will remain crucial to retain human judgment in matters of interpretation and legality.
 
+---
 
+## AI Benefits
 
+Initially, AI can help enhance data analysis and structure. In this section of the study, the authors go over LLM, AI, and its impact on human communication and work. The authors note, “Most AI endeavours are discrete and solve specific, well-defined tasks. The term "artificial general intelligence" is used for the idea of a single integrated system capable of tackling many different kinds of tasks at once, even those it has never encountered before.” (Caldwell et al., 2020)
 
-Isabella Stefano
-AI 109: Enter the World of Artificial Intelligence: Computing Principles, Ethics, and Impact
-April 30 2026
+AI allows criminologists and other teams, like social workers and forensic scientists, to manage case loads more effectively. This improved communication allows the legal system to process cases more efficiently. AI can also help find patterns in data, which is crucial for case studies and identifying criminals.
 
+Spiridonov (2026) also supports the idea that AI can help identify neural networks and patterns when used appropriately. AI in law is most effective when used for structuring information, guiding procedures, and assisting with formatting or research. These uses help improve efficiency without replacing human judgment.
 
-The creation of AI will impact everything and everyone in some shape or form, the good, better, and the bad. “AI-Enabled Future Crime,” by authors Caldwell, Andrews, Tanay, and Griffin, is a review of LLMs and their use in law, as well as a study of AI- and cybercrimes committed by perpetrators. Additionally, the “Possibility of Using Publicly Available Neural Networks in Criminal Proceedings” by Spirdinov argues more negatively on AI and its failure to comprehend human motives and emotions, and the skyrocketing rates of many different types of cyber crimes. The introduction of AI into the Criminology and Forensic Science profession will enhance analytical capabilities. However, it will remain crucial to retain human judgment in matters of interpretation and legality.
-Initially, AI can help enhance data analysis and structure. In this section of the study, the authors go over LLM, AI, and its impact on human communication and work. The Authors note, “Most AI endeavours are discrete and solve specific, well-defined tasks. The term "artificial general intelligence" is used for the idea of a single integrated system capable of tackling many different kinds of tasks at once, even those it has never encountered before.” (Caldwell, Andrews, Tanay, Griffin, 2020) AI allows Criminologists and other teams, like social workers and Forensic Scientists, to multitask case loads to other team members. This effective communication allowed the legal system to process cases a lot more efficiently. AI can also help find patterns in data, which is crucial for case studies and finding criminals. As mentioned previously, AI can help efficiency for cases to progress, but AI can not be relied on. In this specific study by Spirdinov, he supports the idea that AI can help find neural networks and patterns in an appropriate use. He states, “The results can be used in law enforcement and education: to determine the acceptable limits of using publicly available neural networks in criminal proceedings; to develop methodological recommendations.” (Spiridonov, 2026) AI in law is only allowed when it is for rules or helping you format a proper thesis in forensic science, or even guiding you through certain steps of the court system. Although these are great uses, the federal government has placed restrictions on using AI to do actual studies or data due to bias issues. AI will help revolutionize the slow legal process of the court system, but will not take over jobs due to its restrictions. 
-Despite the enhancements, AI can also increase cyber crimes and make detrimental mistakes in human comprehension. While Spirdinov previously supported the usage of AI to help find a neuro-networking team, he also notes that AI struggles to comprehend human emotion, motives, and empathy. He advises the following, “In the absence of direct reference to the relevant legal sources, the models systematically made mistakes when determining the term of conviction expungement, applying the rules for sentencing, and determining the type of recidivism of crimes.” (Spiridonov, 2026) LLM models have a challenging time figuring out motives and human comprehension because they only know robotic comprehension. Furthermore, these models can only apply legal methods such as steps rather than telling people who’s wrong and who's right. Not only does AI struggle with human nature and emotions, but there have also been high rates of new types of cybersecurity crimes at an alarming rate. Authors Caldwell, Andrews, Tanay, and Griffin heavily criticize and warn about the dangers of high rates of cybersecurity in AI crimes, usage in child exploitation. They warn that, “Most obviously, AI could be employed as a tool for crime, making use of its capabilities to facilitate actions against real world targets: predicting the behaviour of people or institutions in order to discover and exploit vulnerabilities; generating fake content for use in blackmail or to sully reputations; performing feats that human perpetrators are unable or unwilling to do themselves, for reasons of danger, physical size, speed of reaction and so on.” (Caldwell, Andrews, Tanay, Griffin, 2020) Criminals have found dark ways to interact with AI because any LLM is free and will also prompt what you want to be prompted for example, cyber crimes such as explicit materials involving minors have become more common in recent years, and as a result, the federal government cracked down on AI generating illegal sexual content. As AI becomes more advance law officials fear that humans will not be able to differentiate between humans and computers themselves, this growing tension fear feed criminals mind into harming others. 
-Ultimately, AI can help the Criminology and Forensic Science professions with analytical capabilities. However, the federal government advises against using it for human judgment or interpretation of legality. AI will change the court system to a fast pace enviorment, but the federal government will ensure it does not take jobs. While this is a good invention, AI can also be used to harm others by cybersecurity attacks, which can lead to very serious felonies. There is no right answers wether AI is good or bad. AI is bad when there is intent and a terrible motive to induce harm, but when it is used for the good, it can revolutionize systems that are frustrating and guide generations. 
-Bibliography
-Caldwell, M., J. T. A. Andrews, T. Tanay, and L. D. Griffin. "AI-enabled future crime." Crime Science 9, no. 1 (2020). Gale Academic OneFile (accessed April 30, 2026). http://dx.doi.org/10.1186/s40163-020-00123-8.
-Spiridonov, Mikhail S. Possibility of using Publicly Available Neural Networks in Criminal Proceedings. Vol. 4 Kazan Innovative University named after V. G. Timiryasov, 2026. doi:10.21202/jdtl.2026.2 https://www.lawjournal.digital/jour/article/view/624/pdf_91
+---
+
+## AI Disruption
+
+Despite the benefits, AI introduces serious risks. AI struggles to comprehend human emotion, motives, and empathy. Spiridonov explains that models often make mistakes in legal reasoning, such as determining sentencing or interpreting legal rules.
+
+AI also contributes to rising cybercrime. Caldwell et al. (2020) warn that AI can be used to:
+- Predict behaviors and exploit vulnerabilities  
+- Generate fake content for blackmail  
+- Perform actions beyond human capability  
+
+Additionally, AI has been misused in serious crimes such as generating illegal content. As AI advances, law enforcement fears that it may become difficult to distinguish between human and AI-generated actions, increasing risks within the justice system.
+
+---
+
+## Gaining an Advantage
+
+Someone entering criminology or forensic science can gain an advantage by learning how to use AI responsibly. This includes:
+- Using AI tools to analyze large datasets more efficiently  
+- Understanding AI limitations to avoid errors in legal interpretation  
+- Applying AI for research, organization, and case preparation  
+
+By combining AI skills with strong human judgment, professionals can work more effectively while avoiding the risks of over-reliance on technology.
+
+---
+
+## Action Plan
+
+To prepare for this AI-influenced career, I would:
+1. Learn how AI tools are used in criminal justice and forensic science  
+2. Practice analyzing data using AI-based tools  
+3. Stay informed about ethical guidelines and legal restrictions surrounding AI  
+
+---
+
+## Sources and AI Use
+
+Caldwell, M., Andrews, J. T. A., Tanay, T., & Griffin, L. D. (2020). *AI-enabled future crime*. Crime Science.
+
+Spiridonov, M. S. (2026). *Possibility of Using Publicly Available Neural Networks in Criminal Proceedings*.
+
+AI tools were used to help organize ideas, improve clarity, and format the report.
